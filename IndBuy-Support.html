@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" type="text/css" href="/content/Resources/css/support.css">
+    <link rel="stylesheet" type="text/css" href="/content/vendors/grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#accordion" ).accordion();
+        });
+        // questions
+        $( function() {
+      $( ".feedback" ).checkboxradio({
+        icon: false
+      });
+    } );
+  </script>
+  <script>
+    $( function() {
+      $( "#dialog" ).dialog();
+    } );
+    </script>
+
+<script>
+  $(function(){
+      var autotag=["Shirts","Pants","Shoes","Watches"];
+      $('#sb').autocomplete(
+          {source:autotag}
+      );
+  });
+
+
+</script>
+     
+</head>
+<body>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <li><a href="/content/index.html"><img src="/content/Resources/img//inddbuy full white.png"alt="IndBuy Logo" width="170px"></a></li>
+                    </div>
+                    <div class="searchbox">
+                        <input type="text" name="searchbox" id="sb" placeholder="search for products,brands and more">
+                    </div>
+                    <div class="search-btn">
+                        <a href="#" class="search-button"><ion-icon class="search-icon" name="search-outline"></ion-icon></a>
+                    </div>
+                    <nav>
+                      <ul class="parent">
+                          <li><a href="/content/index.html">Home</a></li>
+                          <div class="dropdown">
+                              <button class="dropbtn">Products</button>
+                              <div class="dropdown-content">
+                                <a href="/content/index.html#Featured-Products">Featured products</a>
+                                <a href="/content/index.html#latest Products">Latest products</a>
+                                <a href="/content/All products.html">All products</a>
+                              </div>
+                            </div>
+                          <li><a href="/content/index.html">Features</a></li>
+                          <li><a href="/content/IndBuy-Login.html">Account</a></li>
+                          <li><a href="/content/IndBuy-Support.html">Support</a></li>
+                          <li><a href="#"><ion-icon name="cart-outline" class=cart></ion-icon></a></li>
+                      </ul>
+                  </nav>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+
+            <h1>Frequently Asked Questions</h1>
+
+
+
+<div class="box">
+            <div id="accordion">
+                <h3>1. Are you delivering non-essential products?</h3>
+                <div>
+                  <p>
+                    As per government guidelines, we are accepting orders for all products across the country
+                     and for essential products if the chosen delivery location is in a restricted zone.
+                  </p>
+                </div>
+                <h3>2. Can I place orders using Pay on Delivery (Cash/SMS Pay link)?</h3>
+                <div>
+                  <p>
+                    We are accepting Cash/Pay on Delivery in most locations where we are delivering all products. If your location is eligible for Pay on Delivery, you will see the option on the payment page while placing your order. In locations where we are delivering only essential products, we will continue to accept pre-paid orders only.
+                  </p>
+                </div>
+                <h3>3. I have already placed an order, but it is showing a long delivery date?</h3>
+                <div>
+                  <p>
+                    We are working across the Operations network to enable faster deliveries to customers, while ensuring safety of associates and customers. We are continuously improving our delivery promise to offer a seamless delivery experience. We are following the latest Government guidelines to enable delivery of essentials and non-essentials in all permitted areas, and the delivery timeline maybe impacted due to local restrictions.
+                  </p>
+                </div>
+                <h3>4. What is No-Contact delivery?</h3>
+                <div>
+                  <p>
+                    IndBuy is focused on the health and safety of our customers and employees. Based on regional regulations and social distancing requirements; there is a change to the way we’re delivering your items. To adhere to the contactless or no-contact delivery, the delivery associate will leave your order at your doorstep and maintain a 2-meter distance.
+                  </p>
+                </div>
+                <h3>5. What is IndBuy doing to keep customers and employees safe?</h3>
+                <div>
+                  <p>
+                    Customer safety is of utmost importance to us and we are closely monitoring the impact of COVID-19. Learn more about what we are doing to ensure the safety and support of our customers, communities, and employees during this difficult time on the Indbuy Day 1 blog here.
+                  </p>
+              </div>
+            </div>
+
+              <!-- Questions -->
+
+              <div class="widget">
+                <div>
+                  <fieldset>
+                  <legend> Was this information helpful? </legend>
+                  <label for="radio-1">Yes</label>
+                  <input type="radio" name="radio-1" class="feedback" id="radio-1">
+                  <label for="radio-2">No</label>
+                  <input type="radio" name="radio-1" class="feedback" id="radio-2">
+                </fieldset>
+                </div>
+              </div>
+              <div id="dialog" title="Feedback">
+                <p>These are the FAQ for customers if this helps kindly give the feedback below. Thank you</p>
+              </div>
+
+              
+
+        </header>
+
+        
+
+        
+
+        <footer>
+            <div class="row-footer">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li> 
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>  
+                        <li><a href="#">Android App</a></li> 
+
+                    </ul>
+                </div>
+
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-google" class="google"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row-footer">
+                <p>Copyright &copy; 2020 by Indbuy. All rights reserved</p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>IndBuy shopping site</title>
+        <link rel="stylesheet" type="text/css" href="/content/Resources/css/Sign Up.css">
+        <link rel="stylesheet" type="text/css" href="/content/vendors/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/content/vendors/grid.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript">
+            function responseweb()
+            {
+            var mail=document.getElementById("mail").value;
+            var regexp= /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,20})$/;
+    
+            if(regexp.test(mail))
+            {
+                document.getElementById("lable1").innerHTML="valid";
+                document.getElementById("lable1").style.visibility="visible";
+                document.getElementById("lable1").style.color="green";
+    
+            }
+    
+            else
+            {
+                document.getElementById("lable1").innerHTML="Enter Valid Mail Id";
+                document.getElementById("lable1").style.visibility="visible";
+                document.getElementById("lable1").style.color="crimson";
+    
+            }
+
+            var pass= document.getElementById("pass").value;
+		    var regexp=/^[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+		    if(regexp.test(pass))
+		    {
+			document.getElementById("lable2").innerHTML="valid";
+			document.getElementById("lable2").style.visibility="visible";
+			document.getElementById("lable2").style.color="green";
+		    }
+		    else
+		    {
+			document.getElementById("lable2").innerHTML="Password must be 8-16 characters";
+			document.getElementById("lable2").style.visibility="visible";
+			document.getElementById("lable2").style.color="crimson";
+		    }
+            }
+
+            </script>
+        <!-- Jquery -->
+            <script>
+            $( function() {
+            $( "#Birthdate" ).datepicker();
+            } );
+            </script>
+
+<script>
+    $(function(){
+        var autotag=["Shirts","Pants","Shoes","Watches"];
+        $('#sb').autocomplete(
+            {source:autotag}
+        );
+    });
+
+
+</script>
+        
+    </head>
+   <body>
+    <body>
+        <header>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <li><a href="/content/index.html"><img src="/content/Resources/img//inddbuy full white.png"alt="IndBuy Logo" width="170px"></a></li>
+                    </div>
+                    <div class="searchbox">
+                        <input type="text" name="searchbox" id="sb" placeholder="  Search for products,brands and more">
+                    </div>
+                    <div class="search-btn">
+                        <a href="#" class="search-button"><ion-icon class="search-icon" name="search-outline"></ion-icon></a>
+                    </div>
+                    <nav>
+                        <ul class="parent">
+                            <li><a href="/content/index.html">Home</a></li>
+                            <div class="dropdown">
+                                <button class="dropbtn">Products</button>
+                                <div class="dropdown-content">
+                                  <a href="/content/index.html#Featured-Products">Featured products</a>
+                                  <a href="/content/index.html#latest Products">Latest products</a>
+                                  <a href="/content/All products.html">All products</a>
+                                </div>
+                              </div>
+                            <li><a href="/content/index.html">Features</a></li>
+                            <li><a href="/content/IndBuy-Login.html">Account</a></li>
+                            <li><a href="/content/IndBuy-Support.html">Support</a></li>
+                            <li><a href="#"><ion-icon name="cart-outline" class=cart></ion-icon></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <section class="Facebook-contents">
+                <h2>IndBuy, Your New premium Indian Shopping Site.</h2><br>
+                <h3>Sign Up</h3><br>
+                <h4>Its quick and easy</h4><br>
+                <form action="" method="" enctype="multipart/form-data">
+                <div class="inputs">
+                <label for="name">Name </label> : <input type="text" name="Fname" placeholder="Enter Your Name" id="name" class="name" required><br><br>
+                <label for="mail">E-mail    :</label><input type="email" name="mail" placeholder="Enter Email Address" id="mail" class="mail" required></input>
+                <label id="lable1" style="color:crimson;visibility:hidden">Invalid</label><br><br>
+                <label for="pass">Password </label> : <input type="password" name="pass" id="pass" placeholder="Enter password" class="pass" required>
+                <label id="lable2" style="color:crimson;visibility:hidden">Invalid</label><br><br>
+                <label for="Age">Age </label> : <input type="number" name="Age" id="Age" class="Age" required min="1" max="200" placeholder=""><br><br>
+                <label for="Birthdate">Date of Birth :</label>
+                <input id="Birthdate" name="date" placeholder="dd/mm/yy"><br><br>
+                  <label>Gender : </label>
+                  <input type="radio" name="Gender" value="Male" id="male" class="radio radio-m" required> <label for="male">Male</label>
+                            <input type="radio" name="Gender" value="Female" id="female" class="radio radio-f" required> <label for="female">Female</label>
+                            <input type="radio" name="Gender" value="Other" id="other" class="radio radio-o" required> <label for="other">Other</label><br><br>
+                            <div>
+                                <label for="File">Id Proof : </label>
+                                <input name="file" type="file" id="file">
+                            </div><br><br>
+                            <div>
+                                <label for="address">Address :</label>
+                                <textarea id="address" name="address"></textarea>
+                            </div>
+                            <br><br>
+                            <div>
+                            <input id="t&c" type="checkbox" name="t&c" required>
+                            <label for="t&c">I Accept the Terms and Condition</label>
+                        </div><br><br>
+                            <button onclick="responseweb()" type="submit" class="btn btn1">Sign Up</button>
+                </div>
+            </form>
+                </section>
+        </header>
+            
+            <footer>
+                <div class="row-footer">
+                    <div class="col span-1-of-2">
+                        <ul class="footer-nav">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Blog</a></li> 
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">iOS App</a></li>  
+                            <li><a href="#">Android App</a></li> 
+    
+                        </ul>
+                    </div>
+    
+                    <div class="col span-1-of-2">
+                        <ul class="social-links">
+                            <li><a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-google" class="google"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a></li>
+                            
+    
+                        </ul>
+                    </div>
+    
+                </div>
+    
+                <div class="row-footer">
+                    <p>Copyright &copy; 2020 by IndBuy. All rights reserved</p>
+                </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        </footer>
+    
+    
+          
+           
+            
+            
+                    
+            
+            
+    
+    
+        </body>
+    
+    </html>
