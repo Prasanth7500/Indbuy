@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>IndBuy shopping site</title>
+        <link rel="stylesheet" type="text/css" href="/Resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/vendors/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/vendors/grid.css">
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <script type="text/javascript" src="/content/Resources/js/jquery-3.5.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+        <script>
+            $(function(){
+                var autotag=["Shirts","Pants","Shoes","Watches"];
+                $('#sb').autocomplete(
+                    {source:autotag}
+                );
+            });
+
+
+        </script>
+    
+
+</head>
+   <body>
+        <header>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <li><a href="/content/index.html"><img src="/content/Resources/img//inddbuy full white.png"alt="IndBuy Logo" width="170px"></a></li>
+                    </div>
+                    <div class="searchbox">
+                        <input type="text" name="searchbox" id="sb" placeholder="  Search for products,brands and more">
+                    </div>
+                    <div class="search-btn">
+                        <a href="#" class="search-button"><ion-icon class="search-icon" name="search-outline"></ion-icon></a>
+                    </div>
+                    <nav>
+                        <ul class="parent">
+                            <li><a href="/content/index.html">Home</a></li>
+                            <div class="dropdown">
+                                <button class="dropbtn">Products</button>
+                                <div class="dropdown-content">
+                                  <a href="#Featured-Products">Featured products</a>
+                                  <a href="#latest Products">Latest products</a>
+                                  <a href="/content/All products.html">All products</a>
+                                </div>
+                              </div>
+                            <li><a href="#Features">Features</a></li>
+                            <li><a href="/content/IndBuy-Login.html">Account</a></li>
+                            <li><a href="/content/IndBuy-Support.html">Support</a></li>
+                            <li><a href="#"><ion-icon name="cart-outline" class=cart></ion-icon></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-1">
+                <h5>Be Indian, Buy Indian!</h5><br>
+                <p>Made in india and Made By indian.<br> Lets strengthen indian economy. Support Indian products.</p>
+                <a class="btn btn1" href="#Products">Explore Now &#8594</a>
+            </div>
+
+        </header>
+
+        <section class="product-page" id="Featured-Products">
+            <div class="small-container">
+              <h2>Featured Products</h2>
+                <div class="row-1">
+                  <div class="col-2">
+                      <a href="/content/single product page html/product 1.html" target="_blank">
+                     <img src="/content/Resources/img/Featured Products/product-1.jpg" >
+                    </a>
+                     <h4>Red Printed T-shirt</h4>
+                     <div class="rating">
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star-half-outline" class="fa fa-star-o"></ion-icon>
+                     </div>
+                     <p>₹ 499.00</p>
+                     
+                    </div>
+                    
+
+                 <div class="col-2">
+                    <a href="/content/single product page html/product 2.html" target="_blank">
+                    <img src="/content/Resources/img/Featured Products/product-2.jpg">
+                    </a>
+                    <h4>HRX Sport Shoes (Black)</h4>
+                    <div class="rating">
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star-half-outline" class="fa fa-star-ho"></ion-icon>
+                     </div>
+                    <p>₹ 999.00</p>
+                </div>
+
+                <div class="col-2">
+                    <a href="/content/single product page html/product 3.html" target="_blank">
+                     <img src="/content/Resources/img/Featured Products/product-3.jpg">
+                    </a>
+                     <h4>HRX Cloth Pants</h4>
+                     <div class="rating">
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star" class="fa fa-star"></ion-icon>
+                        <ion-icon name="star-outline" class="fa fa-star-o"></ion-icon>
+                     </div>
+                     <p>₹ 799.00</p>
+                    </div>
+
+                <div class="col-2">
+                    <a href="/content/single product page html/product 4.html" target="_blank">
+                         <img src="/content/Resources/img/Featured Products/product-4.jpg">
+                         </a>
+                         <h4>Blue Printed T-shirt</h4>
+                         <div class="rating">
+                            <ion-icon name="star" class="fa fa-star"></ion-icon>
+                            <ion-icon name="star" class="fa fa-star"></ion-icon>
+                            <ion-icon name="star" class="fa fa-star"></ion-icon>
+                            <ion-icon name="star-outline" class="fa fa-star-o"></ion-icon>
+                            <ion-icon name="star-outline" class="fa fa-star-o"></ion-icon>
+                         </div>
+                         <p>₹ 499.00</p>
+                        </div>
+                        </div>   
+
+                    <h2 id="latest Products">Latest Products</h2> 
+                    <div class="row-1">
+                        <div class="col-2">
+                            <a href="/content/single product page html/product 5.html" target="_blank">
+                           <img src="/content/Resources/img/Featured Products/product-5.jpg">
+                            </a>
+                           <h4>Grey Casual Shoes</h4>
+                           <div class="rating">
+                              <ion-icon name="star" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star-outline" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star-outline" class="fa fa-star-o"></ion-icon>
+                           </div>
+                           <p>₹ 799.00</p>
+                          </div>
+      
+                       <div class="col-2">
+                        <a href="/content/single product page html/product 6.html" target="_blank">
+                          <img src="/content/Resources/img/Featured Products/product-6.jpg">
+                        </a>
+                          <h4>Puma T-shirt</h4>
+                          <div class="rating">
+                              <ion-icon name="star" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star-outline" class="fa fa-star-ho"></ion-icon>
+                           </div>
+                          <p>₹ 999.00</p>
+                      </div>
+      
+                      <div class="col-2">
+                        <a href="/content/single product page html/product 7.html" target="_blank">
+                           <img src="/content/Resources/img/Featured Products/product-7.jpg">
+                        </a>
+                           <h4>HRX Socks</h4>
+                           <div class="rating">
+                              <ion-icon name="star" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star" class="fa fa-star"></ion-icon>
+                              <ion-icon name="star-half-outline" class="fa fa-star-o"></ion-icon>
+                           </div>
+                           <p>₹ 799.00</p>
+                          </div>
+      
+                      <div class="col-2">
+                        <a href="/content/single product page html/product 8.html" target="_blank">
+                               <img src="/content/Resources/img/Featured Products/product-8.jpg">
+                        </a>
+                               <h4>Fossil Mens Watch</h4>
+                               <div class="rating">
+                                  <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                  <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                  <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                  <ion-icon name="star-outline" class="fa fa-star-o"></ion-icon>
+                                  <ion-icon name="star-outline" class="fa fa-star-o"></ion-icon>
+                               </div>
+                               <p>₹ 1499.00</p>
+                              </div>
+                              <div class="row-1">
+                                <div class="col-2">
+                                    <a href="/content/single product page html/product 9.html" target="_blank">
+                                   <img src="/content/Resources/img/Featured Products/product-9.jpg">
+                                   <a href="#" class="add-cart">
+                                  </a>
+                                    </a>
+                                   <h4>Roadster premium Watch</h4>
+                                   <div class="rating">
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star-outline" class="fa fa-star-o"></ion-icon>
+                                   </div>
+                                   <p>₹ 1099.00</p>
+                                  </div>
+              
+                               <div class="col-2">
+                                <a href="/content/single product page html/product 10.html" target="_blank">
+                                  <img src="/content/Resources/img/Featured Products/product-10.jpg">
+                                  </a>
+                                  <h4>HRX Sport Shoes (Black)</h4>
+                                  <div class="rating">
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star-half-outline" class="fa fa-star-ho"></ion-icon>
+                                   </div>
+                                  <p>₹ 1999.00</p>
+                              </div>
+              
+                              <div class="col-2">
+                                <a href="/content/single product page html/product 11.html" target="_blank">
+                                   <img src="/content/Resources/img/Featured Products/product-11.jpg">
+                                </a>
+                                   <h4>HRX Casual Shoes (Gray)</h4>
+                                   <div class="rating">
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                      <ion-icon name="star-outline" class="fa fa-star-o"></ion-icon>
+                                   </div>
+                                   <p>₹ 999.00</p>
+                                  </div>
+              
+                              <div class="col-2">
+                                <a href="/content/single product page html/product 12.html" target="_blank">
+                                       <img src="/content/Resources/img/Featured Products/product-12.jpg">
+                                       </a>
+                                       <h4>Plain Cotton Pants</h4>
+                                       <div class="rating">
+                                          <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                          <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                          <ion-icon name="star" class="fa fa-star"></ion-icon>
+                                          <ion-icon name="star" class="fa fa-star-o"></ion-icon>
+                                          <ion-icon name="star-outline" class="fa fa-star-o"></ion-icon>
+                                       </div>
+                                       <p>₹ 699.00</p>
+                                      </div>
+                                      </div> 
+                    
+            </div>
+                
+
+          
+        </section>
+
+        <section id="Features">
+            <div class="row-longcopy">
+                <h2>You can always find something you want.</h2>
+                <p1 class="longcopy">IndBuy, your new premium Indian shopping site. We know your always busy. No time for going to market and shops. So let us take care of that, we are really good at it, we promise! and buy in our site to support Indians.</p1>
+            </div>
+
+            <div class="row-longcopy">
+                <div class="col span-1-of-4">
+                 <ion-icon name="shield-checkmark-outline" class="icon-big"></ion-icon>
+                <h3>100% Buy Protection</h3>
+                <p1 class="long-copy">We are committed to ensure 100% Purchase Protection for customers by offering genuine products, secure payments and easy returns for items shopped on IndBuy</p1>
+            </div>
+
+                <div class="col span-1-of-4">
+                    <ion-icon name="cube-outline" class="icon-big"></ion-icon>
+                <h3>Easy Returns</h3>
+                <p1 class="long-copy">You can return many items sold on IndBuy. When you return an item, you may see different options depending on the seller, item, or reason for return. Not happy? If you need to return a product or have it replaced, you can do so immediately no matter where you are.</p1>
+            </div>
+
+                <div class="col span-1-of-4">
+                    <ion-icon name="bag-check-outline" class="icon-big"></ion-icon>
+                <h3>Genuine Products</h3>
+                <p1 class="long-copy">Sellers are committed to sell only genuine products to customers on IndBuy. All sellers listing their products on IndBuy are required to enter an agreement to list and sell only genuine products</p1>
+            </div>
+
+                <div class="col span-1-of-4">
+                    <ion-icon name="location-outline" class="icon-big"></ion-icon>
+                <h3>Shop Where You Are</h3>
+                <p1 class="long-copy">You’re at the gym and realize you need a set of wireless headphones or you’re at a cafe and learn that you simply must have that amazing tea steeper—with the website, you no longer have to wait to get home to buy it, and you don’t run the risk of constantly forgetting what you need. Shop instantly because it’s always the right place and the right time!</p1>
+            </div>
+
+            </div>
+  
+
+        </section>
+
+        <section>
+            <div class="row-steps">
+                <div class="row">
+                    <h2> How to Order &mdash; Simple as 1, 2, 3</h2>
+                </div>
+    
+                <div class="row">
+                  <div class="col span-1-of-2" class="steps-box">
+                    <div>
+                        <img src="/content/Resources/img/How.jpg" alt="App logo" class="app-screen">
+                    </div>
+                  </div>
+                    <div class="col span-1-of-2" class="steps-box">
+                        <div class="Work-Steps">
+                            <div>1</div>
+                            <p1>Choose the Product that best fits your needs and sign up today.</p1>
+                        </div>
+    
+                        <div class="Work-Steps">
+                            <div>2</div>
+                            <p1>Order your Product using our mobile app or website. Or you can even call us!</p1>
+                        </div>
+    
+                        <div class="Work-Steps">
+                            <div>3</div>
+                            <p1>Get the product in your hands in less than a day. See you next time!</p1>
+                        </div>
+    
+                        <a href="#" class="btn-app"><img src="/content/Resources/img/app-store.png"></a>
+                        <a href="#" class="btn-app"><img src="/content/Resources/img/play-store.png"></a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section>
+
+            <h2>OUR CUSTOMERS CAN'T LIVE WITHOUT US</h2>
+    
+            <div class="row-testimonial">
+                <div class="small-container">
+                    <div class="col-testimonial col span-1-of-3 box">
+                    <blockquote>
+                        We are really impressed by the quality of customers on IndBuy . We have seen a lot of repeat orders from existing customers as well.                   
+                       <div class="rating-1">
+                           <ion-icon name="star" class="fa fa-star"></ion-icon>
+                           <ion-icon name="star" class="fa fa-star"></ion-icon>
+                           <ion-icon name="star" class="fa fa-star"></ion-icon>
+                           <ion-icon name="star" class="fa fa-star"></ion-icon>
+                           <ion-icon name="star" class="fa fa-star-ho"></ion-icon>
+                       </div>
+                        <img src="/content/Resources/img/Testimonials/Ankita Goyal.jpg" alt="Ankit Goyal">
+                        <h4>Ankita Goyal</h4>
+                   </blockquote>
+               </div>
+
+               <div class="col-testimonial col span-1-of-3 box">
+                <blockquote>
+                    The best part about IndBuy is that they take care of shipping as well. We just have to focus on our products, rest they take care.               
+                   <div class="rating-1">
+                       <ion-icon name="star" class="fa fa-star"></ion-icon>
+                       <ion-icon name="star" class="fa fa-star"></ion-icon>
+                       <ion-icon name="star" class="fa fa-star"></ion-icon>
+                       <ion-icon name="star" class="fa fa-star"></ion-icon>
+                       <ion-icon name="star" class="fa fa-star-ho"></ion-icon>
+                   </div>
+                    <img src="/content/Resources/img/Testimonials/jayanth_mantri.jpeg" alt="Jayanth Mantri">
+                    <h4>Jayanth Mantri</h4><br>
+               </blockquote>
+           </div>
+
+           <div class="col-testimonial col span-1-of-3 box">
+            <blockquote>
+                We deal in lot of big brands but had never tried online selling. We liked the concept of IndBuy and it was a Great Success.                
+               <div class="rating-1">
+                   <ion-icon name="star" class="fa fa-star"></ion-icon>
+                   <ion-icon name="star" class="fa fa-star"></ion-icon>
+                   <ion-icon name="star" class="fa fa-star"></ion-icon>
+                   <ion-icon name="star" class="fa fa-star"></ion-icon>
+                   <ion-icon name="star" class="fa fa-star-ho"></ion-icon>
+               </div>
+                <img src="/content/Resources/img/Testimonials/rohan-puri-sport-management-700x600.jpg" alt="Rohan Puri">
+                <h4>Rohan Puri</h4>
+           </blockquote>
+            </div>
+                </div>
+                    </div>
+            
+        </section>
+        
+        <footer>
+            <div class="row-footer">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li> 
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>  
+                        <li><a href="#">Android App</a></li> 
+
+                    </ul>
+                </div>
+
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-google" class="google"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row-footer">
+                <p>Copyright &copy; 2020 by Indbuy. All rights reserved</p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+      
+       
+        
+        
+                
+        
+        
+
+
+    </body>
+
+</html>
+ 
